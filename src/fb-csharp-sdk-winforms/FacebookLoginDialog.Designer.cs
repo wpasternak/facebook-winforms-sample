@@ -1,6 +1,6 @@
 ﻿namespace fb_csharp_sdk_winforms
 {
-    partial class MainForm
+    partial class FacebookLoginDialog
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnLogin = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
-            // btnLogin
+            // webBrowser1
             // 
-            this.btnLogin.Location = new System.Drawing.Point(111, 75);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(200, 41);
-            this.btnLogin.TabIndex = 0;
-            this.btnLogin.Text = "Login to Facebook";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(794, 474);
+            this.webBrowser1.TabIndex = 0;
+            this.webBrowser1.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.webBrowser1_Navigated);
             // 
-            // MainForm
+            // FacebookLoginDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 186);
-            this.Controls.Add(this.btnLogin);
-            this.Name = "MainForm";
+            this.ClientSize = new System.Drawing.Size(794, 474);
+            this.Controls.Add(this.webBrowser1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FacebookLoginDialog";
             this.Text = "Login to Facebook";
+            this.Load += new System.EventHandler(this.FacebookLoginDialog_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
-
