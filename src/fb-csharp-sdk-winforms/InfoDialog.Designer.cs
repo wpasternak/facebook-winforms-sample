@@ -43,6 +43,7 @@
             this.lblUserId = new System.Windows.Forms.Label();
             this.lnkName = new System.Windows.Forms.LinkLabel();
             this.picProfile = new System.Windows.Forms.PictureBox();
+            this.btnLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picProfile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -186,11 +187,22 @@
             this.picProfile.TabIndex = 15;
             this.picProfile.TabStop = false;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(361, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.TabIndex = 30;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // InfoDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(448, 376);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnProgressAndCancellation);
             this.Controls.Add(this.lnkFacebokSdkFan);
             this.Controls.Add(this.btnDeleteLastMessage);
@@ -233,6 +245,7 @@
         private System.Windows.Forms.Label lblUserId;
         private System.Windows.Forms.LinkLabel lnkName;
         private System.Windows.Forms.PictureBox picProfile;
+        private System.Windows.Forms.Button btnLogout;
 
     }
 }
