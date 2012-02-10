@@ -799,5 +799,10 @@ namespace fb_csharp_sdk_winforms
             fb.PostAsync("me/videos", parameters);
         }
 
+        private void btnProgressAndCancellation_Click(object sender, EventArgs e)
+        {
+            var dlg = new UploadProgressCancelForm(_accessToken);
+            dlg.ShowDialog();
+        }
     }
 }

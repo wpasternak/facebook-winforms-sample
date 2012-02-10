@@ -55,6 +55,7 @@
             this.btnProgressAndCancellation.TabIndex = 29;
             this.btnProgressAndCancellation.Text = "Upload Progress and Cancellation Sample";
             this.btnProgressAndCancellation.UseVisualStyleBackColor = true;
+            this.btnProgressAndCancellation.Click += new System.EventHandler(this.btnProgressAndCancellation_Click);
             // 
             // lnkFacebokSdkFan
             // 
