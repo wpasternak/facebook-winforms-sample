@@ -76,6 +76,7 @@
             this.btnDeleteLastMessage.TabIndex = 27;
             this.btnDeleteLastMessage.Text = "Delete Last Message";
             this.btnDeleteLastMessage.UseVisualStyleBackColor = true;
+            this.btnDeleteLastMessage.Click += new System.EventHandler(this.btnDeleteLastMessage_Click);
             // 
             // btnPostVideo
             // 
@@ -85,6 +86,7 @@
             this.btnPostVideo.TabIndex = 26;
             this.btnPostVideo.Text = "Post Video";
             this.btnPostVideo.UseVisualStyleBackColor = true;
+            this.btnPostVideo.Click += new System.EventHandler(this.btnPostVideo_Click);
             // 
             // bntPostPicture
             // 
@@ -94,6 +96,7 @@
             this.bntPostPicture.TabIndex = 25;
             this.bntPostPicture.Text = "Post Picture";
             this.bntPostPicture.UseVisualStyleBackColor = true;
+            this.bntPostPicture.Click += new System.EventHandler(this.bntPostPicture_Click);
             // 
             // btnPostToWall
             // 
@@ -103,6 +106,7 @@
             this.btnPostToWall.TabIndex = 24;
             this.btnPostToWall.Text = "Post To Wall";
             this.btnPostToWall.UseVisualStyleBackColor = true;
+            this.btnPostToWall.Click += new System.EventHandler(this.btnPostToWall_Click);
             // 
             // label1
             // 
