@@ -6,7 +6,7 @@ _Note: This sample does not necessarily demonstrate the best use but rather feat
 
 # Getting started
 
-Set the appropriate AppId in MainForm.cs before running the sample.
+Set the appropriate `AppId` in `MainForm.cs` before running the sample.
 
 ```csharp
 private const string AppId = "app_id";
