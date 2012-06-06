@@ -7,7 +7,7 @@ namespace fb_csharp_sdk_winforms
 
     public partial class MainForm : Form
     {
-        private const string AppId = ""
+        private const string AppId = "";
 
         /// <summary>
         /// Extended permissions is a comma separated list of permissions to ask the user.
